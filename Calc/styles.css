@@ -1,0 +1,75 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  
+  body {
+    background: rgb(56, 5, 5);
+    padding: 0;
+  }
+  
+  /*Grid layout Styling*/
+  .main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: 5px solid white;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  /*Button Styling*/
+  .main > button {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid white;
+    cursor: pointer;
+    background: rgba(255, 247, 247, 0.75);
+  }
+  
+  .main > button:hover {
+    background: rgba(255, 247, 247, 1);
+  }
+  
+  #ac, #eq {
+    background-color: black;
+    color: white;
+  }
+  
+  #ac:hover {
+    background-color: rgb(177, 37, 37);
+  }
+  
+  #eq:hover {
+    background-color: rgb(51, 156, 77);
+  }
+  
+  .large {
+    grid-column: span 2;
+  }
+  
+  /*Output Styling*/
+  .output {
+    border-radius: 4px;
+    border: 2px solid white;
+    background-color: black;
+    grid-column: span 4;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  
+  .output .prev-op {
+    color: rgb(175, 171, 171);
+    font-size: 1.0rem;
+  }
+  
+  .output .curr-op {
+    color: white;
+    font-size: 3.0rem;
+  }
+  

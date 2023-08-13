@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--Title-->
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Container-->
+    <div class="main">
+        <!--Output Screen-->
+        <div class="output">
+            <div data-prev-op class="prev-op"></div>
+            <div data-curr-op class="curr-op"></div>
+        </div>
+            <!--Buttons Layout-->
+            <button data-ac class="large" id="ac">AC</button>
+            <button data-del>DEL</button>
+            <button data-op>+</button>
+            <button data-val>7</button>
+            <button data-val>8</button>
+            <button data-val>9</button>
+            <button data-op>-</button>
+            <button data-val>4</button>
+            <button data-val>5</button>
+            <button data-val>6</button>
+            <button data-op>*</button>
+            <button data-val>1</button>
+            <button data-val>2</button>
+            <button data-val>3</button>
+            <button data-op>/</button>
+            <button data-val>.</button>
+            <button data-val>0</button>
+            <button data-eq class="large" id="eq">=</button>        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
