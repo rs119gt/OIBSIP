@@ -1,0 +1,94 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background: linear-gradient(to left,#081c15,#43b38c);
+  color: #d8f3dc; 
+}
+.container{
+  background:#081c15;
+  border: 5px solid #95d5b2;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 100px auto 0;
+  max-width: 400px;
+  user-select: none;
+}
+#new-item-form {
+  margin-bottom: 20px;
+}
+
+#item {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #52b788;
+  border-radius: 5px;
+  background-color: #081c15;
+  color: #d8f3dc;
+}
+
+#add-btn {
+  padding: 10px 15px;
+  background-color: #1b4332;
+  border: none;
+  color: #52b788;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: #52b788;
+  color: #d8f3dc;
+}
+
+#list li {
+  margin-bottom: 10px;
+}
+
+.btn-del {
+  background: #1b4332;
+  border: 1px solid #52b788;
+  color: #52b788;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+
+.btn-del:hover,
+.btn-del:focus-visible {
+  background: hsla(144, 45%, 70%, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #1b4332;
+  border: none;
+  color: #52b788;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background-color: #52b788;
+  color: #d8f3dc;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
